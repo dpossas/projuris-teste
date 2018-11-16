@@ -11,7 +11,7 @@ https://documenter.getpostman.com/view/4029859/RzZCFdqd
 
 Recursos Disponíveis
 
-##Funcionário
+### Funcionário
 
 Listar todos os funcionários (Lista padrão enviada no documento de teste)
 GET - http://localhost:8080/funcionarios
@@ -54,7 +54,7 @@ $.ajax(settings).done(function (response) {
 });
 ```
 
-###Array
+### Array
 Buscar ocorrência de um subarray em outro array
 POST - http://localhost:8080/busca_sub_array
 Exemplo de requisição:
@@ -77,7 +77,7 @@ $.ajax(settings).done(function (response) {
 });
 ```
 
-###Char
+### Char
 Busca a primeira letra única em uma palavra
 POST - http://localhost:8080/busca_letra_unica
 Exemplo de requisição:
