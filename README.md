@@ -11,10 +11,13 @@ https://documenter.getpostman.com/view/4029859/RzZCFdqd
 
 Recursos Disponíveis
 
-###Funcionário
+##Funcionário
+
 Listar todos os funcionários (Lista padrão enviada no documento de teste)
-[GET] http://localhost:8080/funcionarios
+GET - http://localhost:8080/funcionarios
 Exemplo de requisição:
+
+```javascript
 var settings = {
   "async": true,
   "crossDomain": true,
@@ -29,10 +32,12 @@ var settings = {
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
+```
 
 Buscar funcionrio pelo índice no array listado acima
-[GET] http://localhost:8080/funcionarios/{index}
+GET - http://localhost:8080/funcionarios/{index}
 Exemplo de requisição:
+```javascript
 var settings = {
   "async": true,
   "crossDomain": true,
@@ -47,11 +52,13 @@ var settings = {
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
+```
 
 ###Array
 Buscar ocorrência de um subarray em outro array
-[POST] http://localhost:8080/busca_sub_array
+POST - http://localhost:8080/busca_sub_array
 Exemplo de requisição:
+```javascript
 var settings = {
   "async": true,
   "crossDomain": true,
@@ -68,11 +75,13 @@ var settings = {
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
+```
 
 ###Char
 Busca a primeira letra única em uma palavra
-[POST] http://localhost:8080/busca_letra_unica
+POST - http://localhost:8080/busca_letra_unica
 Exemplo de requisição:
+```javascript
 var settings = {
   "async": true,
   "crossDomain": true,
@@ -89,3 +98,4 @@ var settings = {
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
+```
