@@ -30,7 +30,7 @@ public class Funcionario {
 	}
 
 	public BigDecimal getSalario() {
-		return salario.setScale(2, BigDecimal.ROUND_CEILING);
+		return salario;
 	}
 
 	public void setSalario(BigDecimal salario) {

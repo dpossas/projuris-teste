@@ -18,16 +18,16 @@ public class FuncionarioResource {
 	public FuncionarioResource() {
 		listaFuncionario = new ArrayList<>();
 
-		Funcionario funcionario1 = new Funcionario("Assistente", "Administrativo", new BigDecimal(1000.0));
-		Funcionario funcionario2 = new Funcionario("Gerente", "Administrativo", new BigDecimal(7000.70));
-		Funcionario funcionario3 = new Funcionario("Diretor", "Administrativo", new BigDecimal(10000.45));
-		Funcionario funcionario4 = new Funcionario("Assistente", "Financeiro", new BigDecimal(1300.9));
-		Funcionario funcionario5 = new Funcionario("Gerente", "Financeiro", new BigDecimal(7500));
-		Funcionario funcionario6 = new Funcionario("Diretor", "Financeiro", new BigDecimal(11000.0));
-		Funcionario funcionario7 = new Funcionario("Estagiário", "Jurídico", new BigDecimal(700.4));
-		Funcionario funcionario8 = new Funcionario("Assistente", "Jurídico", new BigDecimal(1800.90));
-		Funcionario funcionario9 = new Funcionario("Gerente", "Jurídico", new BigDecimal(9500.50));
-		Funcionario funcionario10 = new Funcionario("Diretor", "Jurídico", new BigDecimal(13000.0));
+		Funcionario funcionario1 = new Funcionario("Assistente", "Administrativo", BigDecimal.valueOf(1000.0));
+		Funcionario funcionario2 = new Funcionario("Gerente", "Administrativo", BigDecimal.valueOf(7000.70));
+		Funcionario funcionario3 = new Funcionario("Diretor", "Administrativo", BigDecimal.valueOf(10000.45));
+		Funcionario funcionario4 = new Funcionario("Assistente", "Financeiro", BigDecimal.valueOf(1300.9));
+		Funcionario funcionario5 = new Funcionario("Gerente", "Financeiro", BigDecimal.valueOf(7500));
+		Funcionario funcionario6 = new Funcionario("Diretor", "Financeiro", BigDecimal.valueOf(11000.0));
+		Funcionario funcionario7 = new Funcionario("Estagiário", "Jurídico", BigDecimal.valueOf(700.4));
+		Funcionario funcionario8 = new Funcionario("Assistente", "Jurídico", BigDecimal.valueOf(1800.90));
+		Funcionario funcionario9 = new Funcionario("Gerente", "Jurídico", BigDecimal.valueOf(9500.50));
+		Funcionario funcionario10 = new Funcionario("Diretor", "Jurídico", BigDecimal.valueOf(13000.0));
 
 		listaFuncionario.add(funcionario1);
 		listaFuncionario.add(funcionario2);
