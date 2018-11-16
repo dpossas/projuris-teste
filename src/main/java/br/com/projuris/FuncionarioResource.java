@@ -48,12 +48,13 @@ public class FuncionarioResource {
 
 	@RequestMapping(value = "funcionarios/{index}", method = RequestMethod.GET)
 	public ResponseEntity<Funcionario> buscar(@PathVariable("index") Integer index) {
-		Funcionario funcionario = listaFuncionario.get(index);
-
-		if (funcionario == null) {
+		Funcionario funcionario;
+		try {
+			funcionario = listaFuncionario.get(index);
+		} catch (Exception e) {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
-		
+
 		return new ResponseEntity<Funcionario>(funcionario, HttpStatus.OK);
 	}
 
