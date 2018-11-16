@@ -99,3 +99,44 @@ $.ajax(settings).done(function (response) {
   console.log(response);
 });
 ```
+
+### Cálculo
+Busca o custo total por Cargo
+GET - http://localhost:8080/calculo/cargo 
+Exemplo de requisição:
+```javascript
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://localhost:8080/calculo/cargo",
+  "method": "GET",
+  "headers": {
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+
+Busca o custo total por Departamento
+GET - http://localhost:8080/calculo/departamento 
+Exemplo de requisição:
+```javascript
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://localhost:8080/calculo/departamento",
+  "method": "GET",
+  "headers": {
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
