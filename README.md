@@ -41,7 +41,7 @@ Exemplo de requisição:
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://localhost:8080/funcionarios",
+  "url": "http://localhost:8080/funcionarios/7",
   "method": "GET",
   "headers": {
     "Accept": "application/json",
